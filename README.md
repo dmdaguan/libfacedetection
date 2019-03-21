@@ -1,5 +1,12 @@
 # libfacedetection
 
+深圳大学计算机科学与软件工程学院的于仕琪教授开源了的人脸检测库，人脸检测速度最快可达1500+ FPS！
+这是一个用于图像中基于CNN的人脸检测的开源库。CNN模型已转换为C源文件中的静态变量。源代码不依赖于任何其他库。你需要的只是一个C ++编译器。您可以使用C ++编译器在Windows，Linux，ARM和任何平台下编译源代码。
+SIMD指令用于加速检测。如果使用Intel CPU或NEON for ARM，则可以启用AVX2。模型文件也已在./models/目录中提供。 examples / libfacedetectcnn-example.cpp显示了如何使用该库。
+如何编译：
+在使用g++编译源代码时，请添加-O3以启用优化。
+使用Microsoft Visual Studio编译源代码时，请选择“最大化速度/ -O2”。
+
 This is an open source library for CNN-based face detection in images. The CNN model has been converted to static variables in C source files. The source code does not depend on any other libraries. What you need is just a C++ compiler. You can compile the source code under Windows, Linux, ARM and any platform with a C++ compiler.
 
 SIMD instructions are used to speed up the detection. You can enable AVX2 if you use Intel CPU or NEON for ARM.
